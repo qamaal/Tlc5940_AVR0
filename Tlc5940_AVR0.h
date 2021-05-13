@@ -14,7 +14,7 @@
     THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
     AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
     IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE 
-    DISCLAIMED. IN NO EVENT SHALL MATTHEW T. PANDINA OR CONTRIBUTORS BE LIABLE FOR 
+    DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR 
     ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES 
     (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; 
     LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON 
@@ -39,12 +39,8 @@
     library, and I added a small configuration file (Tlc_AVR0_config.h). Most of 
     the modified code can be found in the Tlc_init() function in Tlc5940_AVR0.cpp. 
 
-    The Arduino TLC5940_AVR0 Library is distributed WITHOUT ANY WARRANTY. In no 
-    event shall Scharre Soft™ be liable for any direct or indirect damages 
-    arising out of the use of this software. Use at your own risk. The original 
-    source code was made available by Matthew Pandina under a BSD-style license.
  
-    (C) 2021 Willem Hoekert
+    (c) 2021 Willem Hoekert
     Scharre Soft™ 
     Amsterdam, The Netherlands
     ScharreSoft@outlook.com
@@ -58,44 +54,44 @@
 #include <stdint.h>
 #include <avr/io.h>
 
-#ifndef USE_DC_FUNCTIONS		// See Tlc_AVR0_config.h 
+#ifndef USE_DC_FUNCTIONS	    	    // See Tlc_AVR0_config.h 
 #define USE_DC_FUNCTIONS 0
 #endif
 
-#ifndef NUM_TLCS			// See Tlc_AVR0_config.h 
+#ifndef NUM_TLCS	        	    	// See Tlc_AVR0_config.h 
 #define NUM_TLCS 1
 #endif
 
-#ifndef GRAYSCALE_RESOLUTION		// See Tlc_AVR0_config.h 
+#ifndef GRAYSCALE_RESOLUTION		    // See Tlc_AVR0_config.h 
 #define GRAYSCALE_RESOLUTION 255
 #endif
 
 #define SIN_PORTDIR VPORTE.DIR
-#define SIN_PORTOUT VPORTE.OUT		//  PE0
-#define SIN_PIN PIN0			//  D11     TLC pin 26   SIN
+#define SIN_PORTOUT VPORTE.OUT		    //  PE0
+#define SIN_PIN PIN0	    		    //  D11     TLC pin 26   SIN
 
 #define SCLK_PORTDIR VPORTE.DIR
-#define SCLK_PORTOUT VPORTE.OUT		//  PE2
-#define SCLK_PIN PIN2			//  D13     TLC pin 25   SCLK
+#define SCLK_PORTOUT VPORTE.OUT		    //  PE2
+#define SCLK_PIN PIN2		    	    //  D13     TLC pin 25   SCLK
 
 #define BLANK_PORTDIR VPORTB.DIR
-#define BLANK_PORTOUT VPORTB.OUT	//  PB1
-#define BLANK_PIN PIN1			//  D10     TLC pin 23   BLANK
+#define BLANK_PORTOUT VPORTB.OUT    	//  PB1
+#define BLANK_PIN PIN1		        	//  D10     TLC pin 23   BLANK
 
 #define XLAT_PORTDIR VPORTB.DIR
-#define XLAT_PORTOUT VPORTB.OUT		//  PB0
-#define XLAT_PIN PIN0			//  D9      TLC pin 24   XLAT
+#define XLAT_PORTOUT VPORTB.OUT	    	//  PB0
+#define XLAT_PIN PIN0	    	    	//  D9      TLC pin 24   XLAT
 
 
 #if (USE_DC_FUNCTIONS)
 
   #define DCPRG_PORTDIR VPORTC.DIR
-  #define DCPRG_PORTOUT VPORTC.OUT	//  PC6
-  #define DCPRG_PIN PIN6		//  D4      TLC pin 19   DCPRG
+  #define DCPRG_PORTOUT VPORTC.OUT  	//  PC6
+  #define DCPRG_PIN PIN6	    	    //  D4      TLC pin 19   DCPRG
 
   #define VPRG_PORTDIR VPORTA.DIR
-  #define VPRG_PORTOUT VPORTA.OUT	//  PA1
-  #define VPRG_PIN PIN1			//  D7      TLC pin 27   VPRG 
+  #define VPRG_PORTOUT VPORTA.OUT	    //  PA1
+  #define VPRG_PIN PIN1		        	//  D7      TLC pin 27   VPRG 
 
 #endif
 
