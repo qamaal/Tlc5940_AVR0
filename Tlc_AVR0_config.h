@@ -66,7 +66,7 @@
 */
 
 
-#define USE_DC_FUNCTIONS 1	
+#define USE_DC_FUNCTIONS 0	
 
 /** If you want to use Dot Correction functions, set USE_DC_FUNCTIONS to 1.
     In addition, connect pin D4 of the Arduino to pin 19 of the TLC5940, 
