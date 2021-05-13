@@ -10,7 +10,7 @@
     this list of conditions and the following disclaimer in the documentation
     and/or other materials provided with the distribution.
 
-    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDER AND CONTRIBUTORS "AS IS"
     AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
     IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
     DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
@@ -35,13 +35,9 @@
     some functions and parameters so that they resemble those from the Alex Leone 
     library, and I added a small configuration file (Tlc_AVR0_config.h). Most of 
     the modified code can be found in the Tlc_init() function in Tlc5940_AVR0.cpp. 
-
-    The Arduino TLC5940_AVR0 Library is distributed WITHOUT ANY WARRANTY. In no 
-    event shall Scharre Soft™ be liable for any direct or indirect damages 
-    arising out of the use of this software. Use at your own risk. The original 
-    source code was made available by Matthew Pandina under a BSD-style license.
  
-    (C) 2021 Willem Hoekert
+ 
+    (c) 2021 Willem Hoekert
     Scharre Soft™ 
     Amsterdam, The Netherlands
     ScharreSoft@outlook.com
