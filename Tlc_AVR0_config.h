@@ -37,12 +37,8 @@
     library, and I added a small configuration file (Tlc_AVR0_config.h). Most of 
     the modified code can be found in the Tlc_init() function in Tlc5940_AVR0.cpp. 
 
-    The Arduino TLC5940_AVR0 Library is distributed WITHOUT ANY WARRANTY. In no 
-    event shall Scharre Soft™ be liable for any direct or indirect damages 
-    arising out of the use of this software. Use at your own risk. The original 
-    source code was made available by Matthew Pandina under a BSD-style license.
  
-    (C) 2021 Willem Hoekert
+    (c) 2021 Willem Hoekert
     Scharre Soft™ 
     Amsterdam, The Netherlands
     ScharreSoft@outlook.com
