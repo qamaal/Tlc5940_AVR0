@@ -58,7 +58,6 @@
 #define NUM_TLCS 1
 
 /** From the Alex Leone file:
-
     Number of TLCs daisy-chained.  To daisy-chain, attach the SOUT (TLC pin 17)
     of the first TLC to the SIN (TLC pin 26) of the next.  The rest of the pins
     are attached normally.
