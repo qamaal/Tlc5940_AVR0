@@ -34,7 +34,7 @@
     TLC5940" that was written by Matthew T. Pandina. I modified the code for the 
     port registers, the timers, the SPI and the ISR, so that it would work with 
     microcontrollers from the megaAVR® 0-series. In addition, I added a parameter 
-    (GRAYSCALE_RESOLUTION) that allows one to adjust the PWM frequency, I renamed 
+    (GRAYSCALE_RESOLUTION) that allows you to adjust the PWM frequency, I renamed 
     some functions and parameters so that they resemble those from the Alex Leone 
     library, and I added a small configuration file (Tlc_AVR0_config.h). Most of 
     the modified code can be found in the Tlc_init() function in Tlc5940_AVR0.cpp. 
