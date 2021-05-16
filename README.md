@@ -19,8 +19,8 @@ Drawback:
 
 To install this library in the Arduino IDE follow these steps:
 
-- download ZIP file and extract the ZIP file that is in the ZIP file.
-- Rename the extracted ZIP file to Tlc5940_AVR0.zip
+- Download ZIP file and extract the ZIP file that is in the ZIP file.
+- Rename the extracted ZIP file to Tlc5940_AVR0.zip.
 - In the Arduino IDE, navigate to Sketch > Include Library > Add .ZIP Library.
 - Navigate to the .zip file's location and open it.
  
